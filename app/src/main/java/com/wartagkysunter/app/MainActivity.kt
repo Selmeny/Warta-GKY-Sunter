@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
 
         val webview: WebView = findViewById(R.id.myWebview)
         webview.webViewClient = WebViewClient()
+        webview.settings.builtInZoomControls = true
+        webview.settings.displayZoomControls = false
         webview.loadUrl("https://gkysunter.org/warta")
     }
 }
